@@ -106,21 +106,17 @@ def aumentaLike(request, postId):
 	post.like += 1
 	post.save()
 
-	response = HttpResponse("like aumentou")
-	response.status_code = 200
-
-	return response
+	return redirect('portfolio:blog')
 
 def diminuiLike(request, postId):
 
 	post = get_object_or_404(Post, pk=postId)
-	post.like -= 1
+	if post.like != 0:
+		post.like -= 1
+	
 	post.save()
 
-	response = HttpResponse("like diminuiu")
-	response.status_code = 200
-
-	return response
+	return redirect('portfolio:blog')
 
 def login_view(request):
 	username = request.POST["username"]

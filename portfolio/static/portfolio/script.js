@@ -92,11 +92,3 @@ function mudaCorInput(input) {
 function tiraCorInput(input) {
     input.style.backgroundColor = "#414249";
 }
-
-async function aumentaLike(id) {
-    await fetch("addLike/" + id)
-}
-
-async function diminuiLike(id) {
-    await fetch("diminuiLike/" + id)
-}

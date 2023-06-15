@@ -13,8 +13,10 @@ urlpatterns = [
     path('newComentario', views.insereComentario, name='newComentario'),
     path('editPost/<int:postId>', views.editPost_view, name='editPost'),
     path('apagaPost/<int:postId>', views.apagaPost_view, name='apagaPost'),
+
     path('addLike/<int:postId>', views.aumentaLike, name='addLike'),
     path('diminuiLike/<int:postId>', views.diminuiLike, name='diminuiLike'),
+
     path('login', views.login_view, name='login'),
     path('login_page', views.login_page_view, name='login_page')
 ]

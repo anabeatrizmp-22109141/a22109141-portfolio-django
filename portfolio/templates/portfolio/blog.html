@@ -28,10 +28,9 @@
                     Likes: {{ post.like }}
                 </p>
                 <div class="button-comments">
-                    <button onclick="aumentaLike(post.id)">Add Like</button>
-                    <button onclick="diminuiLike(post.id)">Diminui Like</button>
+                    <a href="{% url 'portfolio:addLike' post.id %}">Add Like</a>
+                    <a href="{% url 'portfolio:diminuiLike' post.id %}">Diminui Like</a>
                 </div>
-
                 <a href="{% url 'portfolio:editPost' post.id %}">Edita Post</a>
             </div>
         {% endfor %}

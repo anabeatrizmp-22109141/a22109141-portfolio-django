@@ -7,11 +7,11 @@
             <form action="" method="POST">
                 {% csrf_token %}
                 {{ form.as_p }}
-            </form>
-            <div class="buttons-form">
+                <div class="buttons-form">
                 <a href="{% url 'portfolio:blog' %}" class="btn btn-warning">Cancelar</a>
                 <input type="submit" value="Gravar" id="forms-button">
             </div>
+            </form>
         </div>
     </div>
 {% endblock %}
