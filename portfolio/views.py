@@ -23,6 +23,9 @@ def login_page_view(request):
 
 def js_playground_view(request):
 	return render(request, 'portfolio/javascript-playground.html')
+
+def video_view(request):
+	return render(request, 'portfolio/video.html')
 def blog_view(request):
 	context = {
 		'autores': Author.objects.all(),
@@ -113,7 +116,7 @@ def diminuiLike(request, postId):
 	post = get_object_or_404(Post, pk=postId)
 	if post.like != 0:
 		post.like -= 1
-	
+
 	post.save()
 
 	return redirect('portfolio:blog')

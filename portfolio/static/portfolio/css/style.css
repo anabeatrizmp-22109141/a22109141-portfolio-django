@@ -23,8 +23,8 @@ body {
 main {
     position: relative;
     max-width: 100%;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
 
 
@@ -292,12 +292,12 @@ input:checked + .slider:before {
 }
 
 .container-about-me > p {
-    text-align:justify-all ;
+    text-align: justify-all;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.line{
+.line {
     background-color: #5e0f76;
 }
 
@@ -335,7 +335,7 @@ input:checked + .slider:before {
     font-size: 1.1em;
 }
 
-.lineskill  {
+.lineskill {
     margin-top: 5px;
     margin-left: 35%;
     background: linear-gradient(90deg, #ff04b4, #9c08c9);;
@@ -574,6 +574,7 @@ input:checked + .slider:before {
         position: relative;
         top: 0;
     }
+
     .switch {
         position: absolute;
         top: 0;
@@ -991,6 +992,7 @@ footer img {
     background-color: #9f1469;
 }
 
+
 .editPost, .newPost, .newComentario, .newAutor {
     display: flex;
     align-items: center;
@@ -1008,7 +1010,7 @@ footer img {
     width: 100%;
 }
 
-.editPost input[type="text"], .newPost input[type="text"], .newComentario input[type="text"], .newAutor input[type="text"]{
+.editPost input[type="text"], .newPost input[type="text"], .newComentario input[type="text"], .newAutor input[type="text"] {
     width: 70%;
     height: 25px;
 }
@@ -1065,6 +1067,26 @@ footer img {
     justify-content: center;
 }
 
+.video {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#videoBotao {
+    color: white;
+}
 
 
 
